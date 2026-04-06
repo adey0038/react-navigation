@@ -1,3 +1,3 @@
 export default function Spinner() {
-  return <p>Loading...</p>;
+  return <p> List Page Loading...</p>;
 }

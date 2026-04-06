@@ -1,7 +1,9 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router";
 import { ThemeProvider } from "./context/themeProvider.jsx";
 import Header from "./components/header.jsx";
 import Nav from "./components/nav.jsx";
+import Home from "./pages/home.jsx";
+import List from "./pages/list.jsx";
 
 export default function App() {
   return (
@@ -10,10 +12,10 @@ export default function App() {
         <Header />
         <Nav />
         <Routes>
-          <Route path="/" element={<div>Home</div>} />
-          <Route path="/list" element={<div>List</div>} />
+          <Route index element={<Home />} />
+          <Route path="/list" element={<List />} />
           <Route path="/contact" element={<div>Contact</div>} />
-          <Route path="*" element={<div>404 Not Found</div>} />
+          <Route path="*" element={<div>NotFound</div>} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

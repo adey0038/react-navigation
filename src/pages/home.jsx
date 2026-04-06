@@ -1,9 +1,11 @@
+import heroImg from "../assets/tenor_meme.png";
+
 export default function Home() {
   return (
     <div>
-      <h1>Welcome to the Home Page</h1>
+      <h2>Welcome to the Home Page</h2>
       <p>This is the home page of our application.</p>
-      <img src="path/to/image.jpg" alt="Description of image" />
+      <img src={heroImg} alt="A funny face" />
     </div>
   );
 }
