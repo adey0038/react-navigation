@@ -4,6 +4,8 @@ import Header from "./components/header.jsx";
 import Nav from "./components/nav.jsx";
 import Home from "./pages/home.jsx";
 import List from "./pages/list.jsx";
+import Contact from "./pages/contact.jsx";
+import NotFound from "./pages/notFound.jsx";
 
 export default function App() {
   return (
@@ -14,8 +16,8 @@ export default function App() {
         <Routes>
           <Route index element={<Home />} />
           <Route path="/list" element={<List />} />
-          <Route path="/contact" element={<div>Contact</div>} />
-          <Route path="*" element={<div>NotFound</div>} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

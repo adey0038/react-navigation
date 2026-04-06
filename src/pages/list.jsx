@@ -9,7 +9,7 @@ export default function List() {
     fetch("https://jsonplaceholder.typicode.com/posts")
       .then((res) => res.json())
       .then((data) => {
-        setData(data.slice(0, 20));
+        setData(data.slice(0, 15));
         setLoading(false);
       });
   }, []);
