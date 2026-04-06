@@ -1,11 +1,13 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "./context/themeProvider.jsx";
+import Header from "./components/header.jsx";
 import Nav from "./components/nav.jsx";
 
 export default function App() {
   return (
     <ThemeProvider>
       <BrowserRouter>
+        <Header />
         <Nav />
         <Routes>
           <Route path="/" element={<div>Home</div>} />
