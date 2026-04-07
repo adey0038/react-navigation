@@ -1,0 +1,25 @@
+.nav {
+  background-color: var(--nav-bg-color);
+  padding-block: 1rem;
+  padding-inline: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.link {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.link:hover {
+  color: var(--hover-color);
+}
+
+.active {
+  color: var(--hover-color);
+  font-weight: 600;
+  text-decoration: underline;
+}

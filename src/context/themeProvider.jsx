@@ -3,7 +3,7 @@ import { useContext, useState, createContext, useEffect } from "react";
 const ThemeContext = createContext();
 
 const ThemeProvider = (props) => {
-  const [theme, setTheme] = useState("forest");
+  const [theme, setTheme] = useState(null);
   const [themeList] = useState(["forest", "ocean", "desert"]);
 
   const updateTheme = (newTheme) => {
@@ -19,8 +19,10 @@ const ThemeProvider = (props) => {
   }, []);
 
   useEffect(() => {
-    document.body.setAttribute("data-theme", theme);
-    import(`../themes/${theme}.css`);
+    if (theme) {
+      document.body.setAttribute("data-theme", theme);
+      import(`../themes/${theme}.css`);
+    }
   }, [theme]);
 
   return (

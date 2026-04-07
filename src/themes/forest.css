@@ -1,5 +1,7 @@
 [data-theme="forest"] {
-  --bg-color: #0d1f0f;
-  --text-color: #d8f3dc;
-  --accent-color: #52b788;
+  --bg-color: #07410f;
+  --text-color: #a2eaad;
+  --accent-color: #1a7634;
+  --nav-bg-color: #a2eaad;
+  --border: 2px solid #1a7634;
 }

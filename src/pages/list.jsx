@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Spinner from "../components/spinner.jsx";
+import styles from "../styles/list.module.css";
 
 export default function List() {
   const [data, setData] = useState([]);
@@ -17,10 +18,12 @@ export default function List() {
   if (loading) return <Spinner />;
 
   return (
-    <div>
-      <h2>List Page</h2>
+    <div className={styles.list}>
+      <h2>List Of Items</h2>
       {data.map((item) => (
-        <p key={item.id}>{item.title}</p>
+        <p className={styles.item} key={item.id}>
+          {item.title}
+        </p>
       ))}
     </div>
   );

@@ -1,5 +1,7 @@
 [data-theme="ocean"] {
-  --bg-color: #0d161f;
+  --bg-color: #0d2237;
   --text-color: #accae9;
   --accent-color: #1177dd;
+  --nav-bg-color: #accae9;
+  --border: 2px solid #1177dd;
 }

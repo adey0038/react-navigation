@@ -1,19 +1,39 @@
+import styles from "../styles/contact.module.css";
+
 export default function Contact() {
   return (
-    <div>
+    <div className={styles.contact}>
       <h2>Contact Us</h2>
       <p>If you have any questions, feel free to reach out!</p>
       <form>
-        <label htmlFor="name">Name:</label>
-        <input type="text" id="name" placeholder="Your Name" required />
+        <div className={styles.field}>
+          <label className={styles.label} htmlFor="name">
+            Name:
+          </label>
+          <input className={styles.input} type="text" id="name" required />
+        </div>
 
-        <label htmlFor="email">Email:</label>
-        <input type="email" id="email" placeholder="Your Email" required />
+        <div className={styles.field}>
+          <label className={styles.label} htmlFor="email">
+            Email:
+          </label>
+          <input className={styles.input} type="email" id="email" required />
+        </div>
 
-        <label htmlFor="message">Message:</label>
-        <textarea id="message" placeholder="Your Message" required></textarea>
+        <div className={styles.field}>
+          <label className={styles.label} htmlFor="message">
+            Message:
+          </label>
+          <textarea
+            className={styles.textarea}
+            id="message"
+            required
+          ></textarea>
+        </div>
 
-        <button type="submit">Send Message</button>
+        <button className={styles.button} type="submit">
+          Send Message
+        </button>
       </form>
     </div>
   );

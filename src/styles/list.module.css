@@ -1,0 +1,13 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* gap: 0.5rem; */
+  padding: 2rem;
+}
+
+.item {
+  line-height: 0.9;
+  font-size: 1rem;
+}
