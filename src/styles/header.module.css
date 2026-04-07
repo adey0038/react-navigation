@@ -88,4 +88,9 @@
     padding-block-start: 0;
     flex-wrap: wrap;
   }
+
+  .img {
+    width: 100%;
+    height: auto;
+  }
 }
