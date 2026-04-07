@@ -1,18 +1,42 @@
-# React + Vite
+# React Themed Multi-Page Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+A React web app built with Vite that demonstrates client-side routing,
+global state management using the Context API, and dynamic theming.
+Users can navigate between multiple pages without reloading the browser
+and switch between different visual themes.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Client-side routing using BrowserRouter and declarative routes
+- Four pages: Home, List, Contact, and 404 Not Found
+- Three themes: Forest, Ocean, and Desert
+- Theme persistence using sessionStorage
+- Global theme management using React Context and a custom hook (useTheme)
+- API data fetching from JSONPlaceholder with a loading Spinner
+- Reusable components: Nav, Header, and Spinner
+- Styled contact form with labels and a submit button
+- CSS variables for theming with CSS modules for component styles
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## Technologies Used
 
-Note: This will impact Vite dev & build performances.
+- React 19
+- Vite
+- React Router
+- JavaScript ES6+
+- CSS Modules
+- CSS Variables
 
-## Expanding the ESLint configuration
+## How to Run
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone the repository
+2. Navigate to the project directory
+3. Run `npm install`
+4. Run `npm run dev`
+5. Open the local URL in your browser
+
+## API
+
+Data on the List page is fetched from:
+https://jsonplaceholder.typicode.com/posts
